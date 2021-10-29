@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WDMaintenanceViewController" customModule="WeighSafe" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="TCf-i5-IrH" id="X1b-WP-AUY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TCf-i5-IrH">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1830"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL5-Oh-MvE">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="VmE-UJ-e6g"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.6705882353" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Maintenance" id="LkS-Qd-zWW"/>
+                    </items>
+                </navigationBar>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwx-m0-ULx">
+                    <rect key="frame" x="18" y="109" width="378" height="1701"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tVO-AO-ffX">
+                            <rect key="frame" x="0.0" y="0.0" width="378" height="1549.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="WARNING" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPX-EH-xXz">
+                                    <rect key="frame" x="0.0" y="0.0" width="378" height="21.5"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                    <color key="textColor" red="0.67084271210000002" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqj-EZ-idR">
+                                    <rect key="frame" x="0.0" y="41.5" width="378" height="356.5"/>
+                                    <string key="text">Do not tow your trailering system unless all bolts and nuts have been properly checked and tightened and all pins and brackets are securely installed. By towing with loose bolts or pins for an extended period, it can cause abnormal stress on the hitch resulting in accident, severe injury, and property damage. 
+Check that all bolts and nuts are torqued to the specific amount in Table 1 before every tow.  Check all plugs and screws in the Head Assembly to make sure that none have backed out or are leaking any hydraulic fluid.</string>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <color key="textColor" red="0.67084271210000002" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="TORQUE SPECIFICATIONS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJd-Y6-b7k">
+                                    <rect key="frame" x="0.0" y="418" width="378" height="21.5"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Ball Shoulder Bolt: 30 ft-lbs Trailer Bracket Bolts: 65 ft-lbs Spring Arm Swivel Bolts: 150 ft-lbs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM1-7D-od6">
+                                    <rect key="frame" x="0.0" y="459.5" width="378" height="71.5"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZwO-wx-5XF">
+                                    <rect key="frame" x="0.0" y="551" width="378" height="2"/>
+                                    <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="4Au-RD-ZOB"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-5K-fdT">
+                                    <rect key="frame" x="0.0" y="573" width="378" height="214"/>
+                                    <string key="text">On the Head Assembly, the friction surfaces should be kept clean and well lubricated with high-pressure multipurpose or bearing grease.  The best way to apply the grease is to twist the Spring Arm Sockets completely to the outside positions and apply grease to the surfaces where the top and bottom of the Spring Arm Sockets contact the rest of the head assembly. See Figure 21.</string>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step10a" translatesAutoresizingMaskIntoConstraints="NO" id="yPt-us-QWn">
+                                    <rect key="frame" x="0.0" y="807" width="378" height="184.5"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0M-ZJ-25b">
+                                    <rect key="frame" x="0.0" y="1011.5" width="378" height="309"/>
+                                    <string key="text">There are also two grease ports on the Head Assembly that supply grease to the Lead Screw that needs to be serviced at the beginning of each towing season or bi-annually in warmer climates.  To service, use a grease gun filled with high-pressure multipurpose or bearing grease and pump into ports.  Fill the top cavity completely full until excess grease starts to come out of the top around the O-ring.  For the bottom port, continue to fill until grease starts to come out of the bottom drain hole in the rubber sleeve. See Figure 22.</string>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step10b" translatesAutoresizingMaskIntoConstraints="NO" id="AFk-cr-Uph">
+                                    <rect key="frame" x="0.0" y="1340.5" width="378" height="209"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="tVO-AO-ffX" firstAttribute="leading" secondItem="wwx-m0-ULx" secondAttribute="leading" id="Zhz-MR-qhh"/>
+                        <constraint firstItem="tVO-AO-ffX" firstAttribute="width" secondItem="wwx-m0-ULx" secondAttribute="width" id="gFU-Ee-Uw9"/>
+                        <constraint firstAttribute="bottom" secondItem="tVO-AO-ffX" secondAttribute="bottom" id="hNd-wR-2ds"/>
+                        <constraint firstAttribute="trailing" secondItem="tVO-AO-ffX" secondAttribute="trailing" id="wCP-RW-RbB"/>
+                        <constraint firstItem="tVO-AO-ffX" firstAttribute="top" secondItem="wwx-m0-ULx" secondAttribute="top" id="x3g-Ih-uo4"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wwx-m0-ULx" firstAttribute="top" secondItem="uoh-OT-AAQ" secondAttribute="top" constant="65" id="73D-aR-b3O"/>
+                <constraint firstItem="wwx-m0-ULx" firstAttribute="leading" secondItem="uoh-OT-AAQ" secondAttribute="leading" constant="18" id="HHd-R2-0fY"/>
+                <constraint firstItem="TL5-Oh-MvE" firstAttribute="top" secondItem="uoh-OT-AAQ" secondAttribute="top" id="aij-O6-t9G"/>
+                <constraint firstItem="TL5-Oh-MvE" firstAttribute="leading" secondItem="uoh-OT-AAQ" secondAttribute="leading" id="g32-cd-WdZ"/>
+                <constraint firstAttribute="bottom" secondItem="wwx-m0-ULx" secondAttribute="bottom" constant="20" id="k7d-ed-V6K"/>
+                <constraint firstItem="uoh-OT-AAQ" firstAttribute="trailing" secondItem="wwx-m0-ULx" secondAttribute="trailing" constant="18" id="rqq-Bx-k4j"/>
+                <constraint firstItem="TL5-Oh-MvE" firstAttribute="trailing" secondItem="uoh-OT-AAQ" secondAttribute="trailing" id="uNi-yI-sjk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="uoh-OT-AAQ"/>
+            <point key="canvasLocation" x="137.68115942028987" y="465.40178571428567"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="step10a" width="243" height="184.5"/>
+        <image name="step10b" width="190" height="209"/>
+    </resources>
+</document>

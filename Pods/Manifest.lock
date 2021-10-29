@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.0.2)
+  - AMPopTip (4.5.3)
+  - EmptyDataSet-Swift (5.0.0)
+  - SCLAlertView (0.8)
+  - SwiftyJSON (5.0.0)
+  - ZoomableUIView (0.1.8)
+
+DEPENDENCIES:
+  - Alamofire
+  - AMPopTip
+  - EmptyDataSet-Swift (~> 5.0.0)
+  - SCLAlertView
+  - SwiftyJSON
+  - ZoomableUIView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AMPopTip
+    - EmptyDataSet-Swift
+    - SCLAlertView
+    - SwiftyJSON
+    - ZoomableUIView
+
+SPEC CHECKSUMS:
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  AMPopTip: 77eef4793d50709bef83825b72da4f501263b91d
+  EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  ZoomableUIView: 779cd75708a4831f3ada4cc907b3c29c95b45238
+
+PODFILE CHECKSUM: bce2b43047f9bb3463b09a39fdb859cd7b97a6c4
+
+COCOAPODS: 1.8.4

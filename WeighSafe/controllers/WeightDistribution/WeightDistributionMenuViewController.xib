@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeightDistributionMenuViewController" customModule="WeighSafe" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Sin-Bq-7RB" id="APT-TR-8ix"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Sin-Bq-7RB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xB3-gi-LjL">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="UrD-TL-reG">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="310"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6n-Pa-xX2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="1Oo-uR-6uf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Instruction Guide">
+                                        <color key="titleColor" red="0.67084271210000002" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="instructionGuideButtonPress:" destination="-1" eventType="touchUpInside" id="GA5-15-6qC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uI0-Hl-XcV">
+                                    <rect key="frame" x="0.0" y="52" width="414" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="atH-la-VrQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Instruction Video">
+                                        <color key="titleColor" red="0.67084271210000002" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="videoButtonPress:" destination="-1" eventType="touchUpInside" id="utR-Ks-8I9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H24-Ji-ujc">
+                                    <rect key="frame" x="0.0" y="104" width="414" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="yl9-1I-jU8"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Maintenance">
+                                        <color key="titleColor" red="0.67084271210000002" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="maintenanceButtonPress:" destination="-1" eventType="touchUpInside" id="tg4-yF-Oc4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi9-Yl-9cR">
+                                    <rect key="frame" x="0.0" y="156" width="414" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="F0v-KJ-aQn"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Frequently Asked Questions">
+                                        <color key="titleColor" red="0.67084271210000002" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="faqButtonPress:" destination="-1" eventType="touchUpInside" id="fyC-R7-WHF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9P-d2-Mxs">
+                                    <rect key="frame" x="0.0" y="208" width="414" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="KvI-0d-Q6A"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Warranty">
+                                        <color key="titleColor" red="0.67084271210000002" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="warrantyButtonPress:" destination="-1" eventType="touchUpInside" id="gED-8Z-5v1"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqz-yV-WGl">
+                                    <rect key="frame" x="0.0" y="260" width="414" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="mhs-o8-tsw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Contact Us">
+                                        <color key="titleColor" red="0.67084271210000002" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="contactButtonPress:" destination="-1" eventType="touchUpInside" id="8R9-eN-0fP"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="UrD-TL-reG" secondAttribute="bottom" id="Sd1-DG-gOf"/>
+                        <constraint firstItem="UrD-TL-reG" firstAttribute="top" secondItem="xB3-gi-LjL" secondAttribute="top" id="g7e-hP-rXX"/>
+                        <constraint firstItem="UrD-TL-reG" firstAttribute="leading" secondItem="xB3-gi-LjL" secondAttribute="leading" id="hPn-nw-YaL"/>
+                        <constraint firstAttribute="trailing" secondItem="UrD-TL-reG" secondAttribute="trailing" id="hTj-jV-upb"/>
+                        <constraint firstItem="UrD-TL-reG" firstAttribute="width" secondItem="xB3-gi-LjL" secondAttribute="width" id="wQd-PG-dPk"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="xB3-gi-LjL" firstAttribute="trailing" secondItem="6d7-Wv-Hxe" secondAttribute="trailing" id="4KG-Un-Dd8"/>
+                <constraint firstItem="xB3-gi-LjL" firstAttribute="leading" secondItem="6d7-Wv-Hxe" secondAttribute="leading" id="LXv-th-RRS"/>
+                <constraint firstItem="xB3-gi-LjL" firstAttribute="bottom" secondItem="6d7-Wv-Hxe" secondAttribute="bottom" id="rTX-V3-2o3"/>
+                <constraint firstItem="xB3-gi-LjL" firstAttribute="top" secondItem="6d7-Wv-Hxe" secondAttribute="top" id="uRL-Qa-FCZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6d7-Wv-Hxe"/>
+            <point key="canvasLocation" x="138" y="163"/>
+        </view>
+    </objects>
+</document>

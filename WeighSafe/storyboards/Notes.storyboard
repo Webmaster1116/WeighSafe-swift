@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eHj-y9-byP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notes-->
+        <scene sceneID="3DC-L4-9vR">
+            <objects>
+                <navigationController id="eHj-y9-byP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notes" image="notes" id="zsF-aN-cjd"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8Qz-cW-wDa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.67450980390000004" green="0.1176470588" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hd3-cT-c5O" kind="relationship" relationship="rootViewController" id="02M-iL-Zr3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mS-rH-doM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-541" y="152"/>
+        </scene>
+        <!--Notes View Controller-->
+        <scene sceneID="8vh-Zk-Lqc">
+            <objects>
+                <viewController id="Hd3-cT-c5O" customClass="NotesViewController" customModule="WeighSafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="czq-4O-cfz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSp-mQ-IJc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQN-ei-QM7">
+                                        <rect key="frame" x="8" y="8" width="398" height="709"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Gh-hY-Ovf">
+                                                <rect key="frame" x="8" y="8" width="382" height="693"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="1Gh-hY-Ovf" secondAttribute="bottom" constant="8" id="Q6t-0o-1yo"/>
+                                            <constraint firstItem="1Gh-hY-Ovf" firstAttribute="top" secondItem="gQN-ei-QM7" secondAttribute="top" constant="8" id="g2m-PA-7Oq"/>
+                                            <constraint firstItem="1Gh-hY-Ovf" firstAttribute="leading" secondItem="gQN-ei-QM7" secondAttribute="leading" constant="8" id="sOL-aI-exM"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Gh-hY-Ovf" secondAttribute="trailing" constant="8" id="wbY-ye-Hf7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gQN-ei-QM7" firstAttribute="centerY" secondItem="cSp-mQ-IJc" secondAttribute="centerY" id="2nf-Pa-hHw"/>
+                                    <constraint firstItem="gQN-ei-QM7" firstAttribute="top" secondItem="cSp-mQ-IJc" secondAttribute="top" constant="8" id="9UG-7y-Ng3"/>
+                                    <constraint firstItem="gQN-ei-QM7" firstAttribute="centerX" secondItem="cSp-mQ-IJc" secondAttribute="centerX" id="EJu-Ip-LTi"/>
+                                    <constraint firstItem="gQN-ei-QM7" firstAttribute="leading" secondItem="cSp-mQ-IJc" secondAttribute="leading" constant="8" id="YRs-K9-Zmp"/>
+                                    <constraint firstAttribute="bottom" secondItem="gQN-ei-QM7" secondAttribute="bottom" constant="8" id="euK-nS-T2o"/>
+                                    <constraint firstAttribute="trailing" secondItem="gQN-ei-QM7" secondAttribute="trailing" constant="8" id="nsB-Z5-hvw"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oma-jg-4uf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cSp-mQ-IJc" firstAttribute="top" secondItem="oma-jg-4uf" secondAttribute="top" id="Z6U-ej-Hj6"/>
+                            <constraint firstItem="cSp-mQ-IJc" firstAttribute="trailing" secondItem="oma-jg-4uf" secondAttribute="trailing" id="baS-qr-Riz"/>
+                            <constraint firstItem="cSp-mQ-IJc" firstAttribute="bottom" secondItem="oma-jg-4uf" secondAttribute="bottom" id="c4k-ie-JWy"/>
+                            <constraint firstItem="cSp-mQ-IJc" firstAttribute="leading" secondItem="oma-jg-4uf" secondAttribute="leading" id="i0Y-ju-Szt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GcK-h0-DMG"/>
+                    <connections>
+                        <outlet property="textView" destination="1Gh-hY-Ovf" id="KF6-aP-alT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w63-i8-zjW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298.55072463768118" y="150.66964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="notes" width="25" height="25"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

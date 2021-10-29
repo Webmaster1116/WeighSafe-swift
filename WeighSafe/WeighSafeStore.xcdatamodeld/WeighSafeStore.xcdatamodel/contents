@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H15" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cargo" representedClassName=".Cargo" syncable="YES">
+        <attribute name="cargoWeight" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Configuration" representedClassName=".Configuration" syncable="YES">
+        <attribute name="additionalTrailerWeight" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="additionalVehicleWeight" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="cargo" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName=".[Number]"/>
+        <attribute name="drawbarPosition" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="hitch" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="holesVisible" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="rearAxleToEndOfReceiver" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="tongueWeight" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="towBallToEndOfSpringBars" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="towBallToTrailerAxle" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="trailer" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vehicle" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Hitch" representedClassName=".Hitch" syncable="YES">
+        <attribute name="ballSize" optional="YES" attributeType="String"/>
+        <attribute name="brand" optional="YES" attributeType="String"/>
+        <attribute name="isWeighSafeHitch" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="maxGTWR" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="maxTongueWeight" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="position" optional="YES" attributeType="String"/>
+        <attribute name="shankSize" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Trailer" representedClassName=".Trailer" syncable="YES">
+        <attribute name="cargoWeight" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="coupler" optional="YES" attributeType="String"/>
+        <attribute name="couplerHeight" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="emptyWeight" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="loadCapacity" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="vin" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Vehicle" representedClassName=".Vehicle" syncable="YES">
+        <attribute name="gcwr" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="gvwr" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="haveBumperPullReceiver" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="haveDistributedRatings" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="haveInBedReceiver" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="make" optional="YES" attributeType="String"/>
+        <attribute name="maxBumperTongueWeightRating" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="maxBumperWeightRating" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="maxDistributedTongueWeightRating" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="maxDistributedWeightRating" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="maxInBedWeightRating" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="mcc" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="model" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="vin" optional="YES" attributeType="String"/>
+        <attribute name="year" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Cargo" positionX="-36" positionY="117" width="128" height="88"/>
+        <element name="Configuration" positionX="-63" positionY="-18" width="128" height="238"/>
+        <element name="Hitch" positionX="-18" positionY="126" width="128" height="163"/>
+        <element name="Trailer" positionX="0" positionY="153" width="128" height="163"/>
+        <element name="Vehicle" positionX="-54" positionY="27" width="128" height="283"/>
+    </elements>
+</model>

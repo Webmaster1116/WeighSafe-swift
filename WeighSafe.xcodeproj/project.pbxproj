@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5BFD583E22BF9C2299CC4F3 /* Pods_WeighSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D4CC22D7B3146769ED4D32 /* Pods_WeighSafe.framework */; };
+		BF35E3D925AD2B47005FDE75 /* TOU-V1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BF35E3D825AD2B47005FDE75 /* TOU-V1.pdf */; };
+		BF444A9D24E6034F00B3C6E6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF444A9C24E6034F00B3C6E6 /* Home.storyboard */; };
+		BF444A9F24E6036800B3C6E6 /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF444A9E24E6036800B3C6E6 /* Setup.storyboard */; };
+		BF444AA124E6038000B3C6E6 /* Checklist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF444AA024E6038000B3C6E6 /* Checklist.storyboard */; };
+		BF444AA424E60D0400B3C6E6 /* UISlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AA324E60D0400B3C6E6 /* UISlidingTabController.swift */; };
+		BF444AA624E60E7600B3C6E6 /* VehicleSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AA524E60E7600B3C6E6 /* VehicleSetupViewController.swift */; };
+		BF444AA924E60F3400B3C6E6 /* VehicleTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AA824E60F3400B3C6E6 /* VehicleTabViewController.swift */; };
+		BF444AAB24E60F8700B3C6E6 /* TrailerTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AAA24E60F8700B3C6E6 /* TrailerTabViewController.swift */; };
+		BF444AAD24E60F9B00B3C6E6 /* HitchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AAC24E60F9B00B3C6E6 /* HitchTabViewController.swift */; };
+		BF444AAF24E60FAD00B3C6E6 /* CargoTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AAE24E60FAD00B3C6E6 /* CargoTabViewController.swift */; };
+		BF444AB224E7665600B3C6E6 /* Trailer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AB124E7665600B3C6E6 /* Trailer+CoreDataClass.swift */; };
+		BF444AB424E7670E00B3C6E6 /* Cargo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AB324E7670E00B3C6E6 /* Cargo+CoreDataClass.swift */; };
+		BF444AB624E7675500B3C6E6 /* Hitch+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AB524E7675500B3C6E6 /* Hitch+CoreDataClass.swift */; };
+		BF444AB924E7B44500B3C6E6 /* WeighSafe.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = D3723C2C22013F070050A4C7 /* WeighSafe.xcdatamodeld */; };
+		BF444ABB24E7B53300B3C6E6 /* Configuration+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444ABA24E7B53300B3C6E6 /* Configuration+CoreDataClass.swift */; };
+		BF444ABF24EB279800B3C6E6 /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444ABD24EB279800B3C6E6 /* VehicleTableViewCell.swift */; };
+		BF444AC024EB279800B3C6E6 /* VehicleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF444ABE24EB279800B3C6E6 /* VehicleTableViewCell.xib */; };
+		BF444AC324EB527E00B3C6E6 /* CargoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AC124EB527E00B3C6E6 /* CargoTableViewCell.swift */; };
+		BF444AC424EB527E00B3C6E6 /* CargoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF444AC224EB527E00B3C6E6 /* CargoTableViewCell.xib */; };
+		BF444AC724EB591100B3C6E6 /* TrailerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AC524EB591100B3C6E6 /* TrailerTableViewCell.swift */; };
+		BF444AC824EB591100B3C6E6 /* TrailerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF444AC624EB591100B3C6E6 /* TrailerTableViewCell.xib */; };
+		BF444ACB24EBA03F00B3C6E6 /* HitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AC924EBA03E00B3C6E6 /* HitchTableViewCell.swift */; };
+		BF444ACC24EBA03F00B3C6E6 /* HitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF444ACA24EBA03E00B3C6E6 /* HitchTableViewCell.xib */; };
+		BF444ACF24EC614800B3C6E6 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444ACD24EC614800B3C6E6 /* VehicleViewController.swift */; };
+		BF444AD024EC614800B3C6E6 /* VehicleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF444ACE24EC614800B3C6E6 /* VehicleViewController.xib */; };
+		BF444AD324EC814C00B3C6E6 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AD124EC814C00B3C6E6 /* TrailerViewController.swift */; };
+		BF444AD424EC814C00B3C6E6 /* TrailerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF444AD224EC814C00B3C6E6 /* TrailerViewController.xib */; };
+		BF444AD624EC829A00B3C6E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AD524EC829A00B3C6E6 /* Extensions.swift */; };
+		BF444AD824ECA5FF00B3C6E6 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AD724ECA5FF00B3C6E6 /* Validators.swift */; };
+		BF444ADA24ECF8AA00B3C6E6 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AD924ECF8AA00B3C6E6 /* Protocols.swift */; };
+		BF444ADD24EEE7E900B3C6E6 /* HitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444ADB24EEE7E900B3C6E6 /* HitchViewController.swift */; };
+		BF444ADE24EEE7E900B3C6E6 /* HitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF444ADC24EEE7E900B3C6E6 /* HitchViewController.xib */; };
+		BF444AE124EEE87000B3C6E6 /* CargoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444ADF24EEE87000B3C6E6 /* CargoViewController.swift */; };
+		BF444AE224EEE87000B3C6E6 /* CargoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF444AE024EEE87000B3C6E6 /* CargoViewController.xib */; };
+		BF444AE424EF21EE00B3C6E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF444AE324EF21EE00B3C6E6 /* HomeViewController.swift */; };
+		BF5CC65F25CB800300EB321F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5CC65E25CB800300EB321F /* WelcomeViewController.swift */; };
+		BF91EA2A260508AC0031D928 /* ConfigsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91EA28260508AC0031D928 /* ConfigsTableView.swift */; };
+		BF91EA2B260508AC0031D928 /* ConfigsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF91EA29260508AC0031D928 /* ConfigsTableView.xib */; };
+		BF91EA3726051D800031D928 /* ConfigsTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91EA3626051D800031D928 /* ConfigsTableViewDelegate.swift */; };
+		BFCAB69824F02E0A00A453E1 /* WeighSafeStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFCAB69624F02E0A00A453E1 /* WeighSafeStore.xcdatamodeld */; };
+		BFCAB6A324F0700700A453E1 /* VinLookupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCAB6A124F0700700A453E1 /* VinLookupTableViewController.swift */; };
+		BFCAB6A424F0700700A453E1 /* VinLookupTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFCAB6A224F0700700A453E1 /* VinLookupTableViewController.xib */; };
+		BFD2FA4724F86ADA0072C2BA /* MeasurementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2FA4524F86ADA0072C2BA /* MeasurementsViewController.swift */; };
+		BFD2FA4824F86ADA0072C2BA /* MeasurementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD2FA4624F86ADA0072C2BA /* MeasurementsViewController.xib */; };
+		BFD2FA5024FE06170072C2BA /* WeightDistributionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2FA4E24FE06170072C2BA /* WeightDistributionMenuViewController.swift */; };
+		BFD2FA5124FE06170072C2BA /* WeightDistributionMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD2FA4F24FE06170072C2BA /* WeightDistributionMenuViewController.xib */; };
+		BFD2FA5824FEDD6B0072C2BA /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2FA5624FEDD6B0072C2BA /* ContactViewController.swift */; };
+		BFD2FA5924FEDD6B0072C2BA /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD2FA5724FEDD6B0072C2BA /* ContactViewController.xib */; };
+		BFD2FA5C24FEE9910072C2BA /* WDWarrantyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2FA5A24FEE9910072C2BA /* WDWarrantyViewController.swift */; };
+		BFD2FA5D24FEE9910072C2BA /* WDWarrantyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD2FA5B24FEE9910072C2BA /* WDWarrantyViewController.xib */; };
+		BFD2FA6024FEEB120072C2BA /* WDMaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2FA5E24FEEB120072C2BA /* WDMaintenanceViewController.swift */; };
+		BFD2FA6124FEEB120072C2BA /* WDMaintenanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD2FA5F24FEEB120072C2BA /* WDMaintenanceViewController.xib */; };
+		BFD2FA6424FEF8370072C2BA /* WDFaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2FA6224FEF8370072C2BA /* WDFaqViewController.swift */; };
+		BFD2FA6524FEF8370072C2BA /* WDFaqViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD2FA6324FEF8370072C2BA /* WDFaqViewController.xib */; };
+		BFD2FA6824FEF9160072C2BA /* WDFaqAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2FA6624FEF9160072C2BA /* WDFaqAnswerViewController.swift */; };
+		BFD2FA6924FEF9160072C2BA /* WDFaqAnswerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD2FA6724FEF9160072C2BA /* WDFaqAnswerViewController.xib */; };
+		BFE8B9C9256F0E2600F2B443 /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8B9C8256F0E2600F2B443 /* DisclaimerViewController.swift */; };
+		BFF4D1CD255C6C850022D7E2 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF4D1CC255C6C850022D7E2 /* Notes.storyboard */; };
+		BFF4D1D0255C6E500022D7E2 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4D1CF255C6E500022D7E2 /* NotesViewController.swift */; };
+		D31A1C0D2316FD7400BA9508 /* Weigh-Safe-True-Tow-Weight-Distribution-Hitch-Limited-Lifetime-Warranty.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D31A1C0C2316FD7400BA9508 /* Weigh-Safe-True-Tow-Weight-Distribution-Hitch-Limited-Lifetime-Warranty.pdf */; };
+		D31D16A5230DB4C600452A25 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31D16A4230DB4C600452A25 /* Step3ViewController.swift */; };
+		D31D16A7230DB53900452A25 /* Step6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31D16A6230DB53900452A25 /* Step6ViewController.swift */; };
+		D31D16A9230DC82E00452A25 /* Step8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31D16A8230DC82E00452A25 /* Step8ViewController.swift */; };
+		D31F0AC1209CFE2D0035327D /* CustomModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31F0AC0209CFE2D0035327D /* CustomModal.xib */; };
+		D31F0AC4209CFE540035327D /* CustomModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F0AC2209CFE540035327D /* CustomModal.swift */; };
+		D31F0AC5209CFE540035327D /* CustomModalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31F0AC3209CFE540035327D /* CustomModalDelegate.swift */; };
+		D337A39020A5F67100100E0B /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337A38F20A5F67100100E0B /* Toast.swift */; };
+		D33E50B82306278700201E70 /* InstructionsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E50B72306278700201E70 /* InstructionsPageViewController.swift */; };
+		D340B9742097CA6300CA7C72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340B9732097CA6300CA7C72 /* AppDelegate.swift */; };
+		D340B9792097CA6300CA7C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D340B9772097CA6300CA7C72 /* Main.storyboard */; };
+		D340B97B2097CA6500CA7C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D340B97A2097CA6500CA7C72 /* Assets.xcassets */; };
+		D340B97E2097CA6500CA7C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D340B97C2097CA6500CA7C72 /* LaunchScreen.storyboard */; };
+		D3723BEC2200C2A40050A4C7 /* TowChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3723BEB2200C2A40050A4C7 /* TowChecklistViewController.swift */; };
+		D3723BF82200CC150050A4C7 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3723BF52200CC150050A4C7 /* Roboto-Medium.ttf */; };
+		D3723BF92200CC150050A4C7 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3723BF62200CC150050A4C7 /* Roboto-Thin.ttf */; };
+		D3723BFA2200CC150050A4C7 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3723BF72200CC150050A4C7 /* Roboto-Bold.ttf */; };
+		D3723C022201147F0050A4C7 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3723C012201147F0050A4C7 /* PersistenceManager.swift */; };
+		D3723C31220140340050A4C7 /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3723C2F220140340050A4C7 /* Vehicle+CoreDataClass.swift */; };
+		D3723C32220140340050A4C7 /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3723C30220140340050A4C7 /* Vehicle+CoreDataProperties.swift */; };
+		D38FDC6F2368D7230026DB10 /* Step0ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38FDC6E2368D7230026DB10 /* Step0ViewController.swift */; };
+		D39B097F2098CE22004896A3 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B097E2098CE22004896A3 /* TextField.swift */; };
+		D39B09812098D816004896A3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B09802098D816004896A3 /* Color.swift */; };
+		D3D4681323295B09000303A4 /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4681223295B09000303A4 /* Step1ViewController.swift */; };
+		D3D4681523295B1D000303A4 /* Step2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4681423295B1C000303A4 /* Step2ViewController.swift */; };
+		D3D4681723295B39000303A4 /* Step4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4681623295B39000303A4 /* Step4ViewController.swift */; };
+		D3D4681923295B4B000303A4 /* Step5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4681823295B4B000303A4 /* Step5ViewController.swift */; };
+		D3D4681B23295B69000303A4 /* Step7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4681A23295B69000303A4 /* Step7ViewController.swift */; };
+		D3D4681D23295B7F000303A4 /* Step9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4681C23295B7F000303A4 /* Step9ViewController.swift */; };
+		D3D4681F23295CFA000303A4 /* Step10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4681E23295CFA000303A4 /* Step10ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78EEDCDF30A86A5A26C62A19 /* Pods-WeighSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeighSafe.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeighSafe/Pods-WeighSafe.release.xcconfig"; sourceTree = "<group>"; };
+		B9CBA3836C614CE82DA61AD9 /* Pods-WeighSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeighSafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeighSafe/Pods-WeighSafe.debug.xcconfig"; sourceTree = "<group>"; };
+		BF35E3D825AD2B47005FDE75 /* TOU-V1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "TOU-V1.pdf"; path = "../../TOU-V1.pdf"; sourceTree = "<group>"; };
+		BF444A9C24E6034F00B3C6E6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		BF444A9E24E6036800B3C6E6 /* Setup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
+		BF444AA024E6038000B3C6E6 /* Checklist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Checklist.storyboard; sourceTree = "<group>"; };
+		BF444AA324E60D0400B3C6E6 /* UISlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISlidingTabController.swift; sourceTree = "<group>"; };
+		BF444AA524E60E7600B3C6E6 /* VehicleSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleSetupViewController.swift; sourceTree = "<group>"; };
+		BF444AA824E60F3400B3C6E6 /* VehicleTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTabViewController.swift; sourceTree = "<group>"; };
+		BF444AAA24E60F8700B3C6E6 /* TrailerTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerTabViewController.swift; sourceTree = "<group>"; };
+		BF444AAC24E60F9B00B3C6E6 /* HitchTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitchTabViewController.swift; sourceTree = "<group>"; };
+		BF444AAE24E60FAD00B3C6E6 /* CargoTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CargoTabViewController.swift; sourceTree = "<group>"; };
+		BF444AB124E7665600B3C6E6 /* Trailer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trailer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BF444AB324E7670E00B3C6E6 /* Cargo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cargo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BF444AB524E7675500B3C6E6 /* Hitch+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hitch+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BF444ABA24E7B53300B3C6E6 /* Configuration+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Configuration+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BF444ABD24EB279800B3C6E6 /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
+		BF444ABE24EB279800B3C6E6 /* VehicleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTableViewCell.xib; sourceTree = "<group>"; };
+		BF444AC124EB527E00B3C6E6 /* CargoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CargoTableViewCell.swift; sourceTree = "<group>"; };
+		BF444AC224EB527E00B3C6E6 /* CargoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CargoTableViewCell.xib; sourceTree = "<group>"; };
+		BF444AC524EB591100B3C6E6 /* TrailerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerTableViewCell.swift; sourceTree = "<group>"; };
+		BF444AC624EB591100B3C6E6 /* TrailerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrailerTableViewCell.xib; sourceTree = "<group>"; };
+		BF444AC924EBA03E00B3C6E6 /* HitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitchTableViewCell.swift; sourceTree = "<group>"; };
+		BF444ACA24EBA03E00B3C6E6 /* HitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HitchTableViewCell.xib; sourceTree = "<group>"; };
+		BF444ACD24EC614800B3C6E6 /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
+		BF444ACE24EC614800B3C6E6 /* VehicleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleViewController.xib; sourceTree = "<group>"; };
+		BF444AD124EC814C00B3C6E6 /* TrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
+		BF444AD224EC814C00B3C6E6 /* TrailerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrailerViewController.xib; sourceTree = "<group>"; };
+		BF444AD524EC829A00B3C6E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BF444AD724ECA5FF00B3C6E6 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		BF444AD924ECF8AA00B3C6E6 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		BF444ADB24EEE7E900B3C6E6 /* HitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitchViewController.swift; sourceTree = "<group>"; };
+		BF444ADC24EEE7E900B3C6E6 /* HitchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HitchViewController.xib; sourceTree = "<group>"; };
+		BF444ADF24EEE87000B3C6E6 /* CargoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CargoViewController.swift; sourceTree = "<group>"; };
+		BF444AE024EEE87000B3C6E6 /* CargoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CargoViewController.xib; sourceTree = "<group>"; };
+		BF444AE324EF21EE00B3C6E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF5CC65E25CB800300EB321F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BF91EA28260508AC0031D928 /* ConfigsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigsTableView.swift; sourceTree = "<group>"; };
+		BF91EA29260508AC0031D928 /* ConfigsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigsTableView.xib; sourceTree = "<group>"; };
+		BF91EA3626051D800031D928 /* ConfigsTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigsTableViewDelegate.swift; sourceTree = "<group>"; };
+		BFCAB69724F02E0A00A453E1 /* WeighSafeStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeighSafeStore.xcdatamodel; sourceTree = "<group>"; };
+		BFCAB6A124F0700700A453E1 /* VinLookupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinLookupTableViewController.swift; sourceTree = "<group>"; };
+		BFCAB6A224F0700700A453E1 /* VinLookupTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VinLookupTableViewController.xib; sourceTree = "<group>"; };
+		BFD2FA4524F86ADA0072C2BA /* MeasurementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementsViewController.swift; sourceTree = "<group>"; };
+		BFD2FA4624F86ADA0072C2BA /* MeasurementsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeasurementsViewController.xib; sourceTree = "<group>"; };
+		BFD2FA4E24FE06170072C2BA /* WeightDistributionMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightDistributionMenuViewController.swift; sourceTree = "<group>"; };
+		BFD2FA4F24FE06170072C2BA /* WeightDistributionMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightDistributionMenuViewController.xib; sourceTree = "<group>"; };
+		BFD2FA5624FEDD6B0072C2BA /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		BFD2FA5724FEDD6B0072C2BA /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
+		BFD2FA5A24FEE9910072C2BA /* WDWarrantyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDWarrantyViewController.swift; sourceTree = "<group>"; };
+		BFD2FA5B24FEE9910072C2BA /* WDWarrantyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDWarrantyViewController.xib; sourceTree = "<group>"; };
+		BFD2FA5E24FEEB120072C2BA /* WDMaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDMaintenanceViewController.swift; sourceTree = "<group>"; };
+		BFD2FA5F24FEEB120072C2BA /* WDMaintenanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDMaintenanceViewController.xib; sourceTree = "<group>"; };
+		BFD2FA6224FEF8370072C2BA /* WDFaqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDFaqViewController.swift; sourceTree = "<group>"; };
+		BFD2FA6324FEF8370072C2BA /* WDFaqViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDFaqViewController.xib; sourceTree = "<group>"; };
+		BFD2FA6624FEF9160072C2BA /* WDFaqAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDFaqAnswerViewController.swift; sourceTree = "<group>"; };
+		BFD2FA6724FEF9160072C2BA /* WDFaqAnswerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDFaqAnswerViewController.xib; sourceTree = "<group>"; };
+		BFE8B9C8256F0E2600F2B443 /* DisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
+		BFEC865A258ADA2900528F92 /* WeighSafe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeighSafe.entitlements; sourceTree = "<group>"; };
+		BFF4D1CC255C6C850022D7E2 /* Notes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
+		BFF4D1CF255C6E500022D7E2 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		D31A1C0C2316FD7400BA9508 /* Weigh-Safe-True-Tow-Weight-Distribution-Hitch-Limited-Lifetime-Warranty.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Weigh-Safe-True-Tow-Weight-Distribution-Hitch-Limited-Lifetime-Warranty.pdf"; sourceTree = "<group>"; };
+		D31D16A4230DB4C600452A25 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
+		D31D16A6230DB53900452A25 /* Step6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step6ViewController.swift; sourceTree = "<group>"; };
+		D31D16A8230DC82E00452A25 /* Step8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step8ViewController.swift; sourceTree = "<group>"; };
+		D31F0AC0209CFE2D0035327D /* CustomModal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomModal.xib; sourceTree = "<group>"; };
+		D31F0AC2209CFE540035327D /* CustomModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModal.swift; sourceTree = "<group>"; };
+		D31F0AC3209CFE540035327D /* CustomModalDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModalDelegate.swift; sourceTree = "<group>"; };
+		D337A38F20A5F67100100E0B /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		D33E50B72306278700201E70 /* InstructionsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsPageViewController.swift; sourceTree = "<group>"; };
+		D340B9702097CA6300CA7C72 /* WeighSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeighSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D340B9732097CA6300CA7C72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D340B9782097CA6300CA7C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D340B97A2097CA6500CA7C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D340B97D2097CA6500CA7C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D340B97F2097CA6500CA7C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35A01F6209A45B000E35A98 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D3723BEB2200C2A40050A4C7 /* TowChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowChecklistViewController.swift; sourceTree = "<group>"; };
+		D3723BF52200CC150050A4C7 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		D3723BF62200CC150050A4C7 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		D3723BF72200CC150050A4C7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		D3723C012201147F0050A4C7 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		D3723C2D22013F070050A4C7 /* WeighSafe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeighSafe.xcdatamodel; sourceTree = "<group>"; };
+		D3723C2F220140340050A4C7 /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D3723C30220140340050A4C7 /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D38FDC6E2368D7230026DB10 /* Step0ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step0ViewController.swift; sourceTree = "<group>"; };
+		D39B097E2098CE22004896A3 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		D39B09802098D816004896A3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		D3D4681223295B09000303A4 /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
+		D3D4681423295B1C000303A4 /* Step2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2ViewController.swift; sourceTree = "<group>"; };
+		D3D4681623295B39000303A4 /* Step4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4ViewController.swift; sourceTree = "<group>"; };
+		D3D4681823295B4B000303A4 /* Step5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step5ViewController.swift; sourceTree = "<group>"; };
+		D3D4681A23295B69000303A4 /* Step7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step7ViewController.swift; sourceTree = "<group>"; };
+		D3D4681C23295B7F000303A4 /* Step9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step9ViewController.swift; sourceTree = "<group>"; };
+		D3D4681E23295CFA000303A4 /* Step10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step10ViewController.swift; sourceTree = "<group>"; };
+		D7D4CC22D7B3146769ED4D32 /* Pods_WeighSafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeighSafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D340B96D2097CA6300CA7C72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BFD583E22BF9C2299CC4F3 /* Pods_WeighSafe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B73ECCF603210D3B43A7FFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9CBA3836C614CE82DA61AD9 /* Pods-WeighSafe.debug.xcconfig */,
+				78EEDCDF30A86A5A26C62A19 /* Pods-WeighSafe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A59FB45B20B75F2096C21F24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35A01F6209A45B000E35A98 /* CoreBluetooth.framework */,
+				D7D4CC22D7B3146769ED4D32 /* Pods_WeighSafe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF444A9B24E602F900B3C6E6 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BF444A9C24E6034F00B3C6E6 /* Home.storyboard */,
+				BF444A9E24E6036800B3C6E6 /* Setup.storyboard */,
+				BF444AA024E6038000B3C6E6 /* Checklist.storyboard */,
+				BFF4D1CC255C6C850022D7E2 /* Notes.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		BF444AA224E60CCE00B3C6E6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF91EA28260508AC0031D928 /* ConfigsTableView.swift */,
+				BF91EA3626051D800031D928 /* ConfigsTableViewDelegate.swift */,
+				BF91EA29260508AC0031D928 /* ConfigsTableView.xib */,
+				BFD2FA4D24FE05CB0072C2BA /* WeightDistribution */,
+				BFD2FA4524F86ADA0072C2BA /* MeasurementsViewController.swift */,
+				BFD2FA4624F86ADA0072C2BA /* MeasurementsViewController.xib */,
+				BFCAB6A124F0700700A453E1 /* VinLookupTableViewController.swift */,
+				BFCAB6A224F0700700A453E1 /* VinLookupTableViewController.xib */,
+				BF444AA724E60F0D00B3C6E6 /* tabs */,
+				BF444AA324E60D0400B3C6E6 /* UISlidingTabController.swift */,
+				BF444AA524E60E7600B3C6E6 /* VehicleSetupViewController.swift */,
+				BF444ACD24EC614800B3C6E6 /* VehicleViewController.swift */,
+				BF444ACE24EC614800B3C6E6 /* VehicleViewController.xib */,
+				BF444AD124EC814C00B3C6E6 /* TrailerViewController.swift */,
+				BF444AD224EC814C00B3C6E6 /* TrailerViewController.xib */,
+				BF444ADB24EEE7E900B3C6E6 /* HitchViewController.swift */,
+				BF444ADC24EEE7E900B3C6E6 /* HitchViewController.xib */,
+				BF444ADF24EEE87000B3C6E6 /* CargoViewController.swift */,
+				BF444AE024EEE87000B3C6E6 /* CargoViewController.xib */,
+				BF444AE324EF21EE00B3C6E6 /* HomeViewController.swift */,
+				BFD2FA5624FEDD6B0072C2BA /* ContactViewController.swift */,
+				BFD2FA5724FEDD6B0072C2BA /* ContactViewController.xib */,
+				BFF4D1CF255C6E500022D7E2 /* NotesViewController.swift */,
+				BF5CC65E25CB800300EB321F /* WelcomeViewController.swift */,
+				BFE8B9C8256F0E2600F2B443 /* DisclaimerViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		BF444AA724E60F0D00B3C6E6 /* tabs */ = {
+			isa = PBXGroup;
+			children = (
+				BF444AA824E60F3400B3C6E6 /* VehicleTabViewController.swift */,
+				BF444AAA24E60F8700B3C6E6 /* TrailerTabViewController.swift */,
+				BF444AAC24E60F9B00B3C6E6 /* HitchTabViewController.swift */,
+				BF444AAE24E60FAD00B3C6E6 /* CargoTabViewController.swift */,
+			);
+			path = tabs;
+			sourceTree = "<group>";
+		};
+		BF444AB024E765E300B3C6E6 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				BF444AB124E7665600B3C6E6 /* Trailer+CoreDataClass.swift */,
+				BF444AB324E7670E00B3C6E6 /* Cargo+CoreDataClass.swift */,
+				BF444AB524E7675500B3C6E6 /* Hitch+CoreDataClass.swift */,
+				BF444ABA24E7B53300B3C6E6 /* Configuration+CoreDataClass.swift */,
+			);
+			path = coredata;
+			sourceTree = "<group>";
+		};
+		BF444ABC24EB271F00B3C6E6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BF444ABD24EB279800B3C6E6 /* VehicleTableViewCell.swift */,
+				BF444ABE24EB279800B3C6E6 /* VehicleTableViewCell.xib */,
+				BF444AC124EB527E00B3C6E6 /* CargoTableViewCell.swift */,
+				BF444AC224EB527E00B3C6E6 /* CargoTableViewCell.xib */,
+				BF444AC524EB591100B3C6E6 /* TrailerTableViewCell.swift */,
+				BF444AC624EB591100B3C6E6 /* TrailerTableViewCell.xib */,
+				BF444AC924EBA03E00B3C6E6 /* HitchTableViewCell.swift */,
+				BF444ACA24EBA03E00B3C6E6 /* HitchTableViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		BFD2FA4D24FE05CB0072C2BA /* WeightDistribution */ = {
+			isa = PBXGroup;
+			children = (
+				BFD2FA4E24FE06170072C2BA /* WeightDistributionMenuViewController.swift */,
+				BFD2FA4F24FE06170072C2BA /* WeightDistributionMenuViewController.xib */,
+				BFD2FA5A24FEE9910072C2BA /* WDWarrantyViewController.swift */,
+				BFD2FA5B24FEE9910072C2BA /* WDWarrantyViewController.xib */,
+				BFD2FA5E24FEEB120072C2BA /* WDMaintenanceViewController.swift */,
+				BFD2FA5F24FEEB120072C2BA /* WDMaintenanceViewController.xib */,
+				BFD2FA6224FEF8370072C2BA /* WDFaqViewController.swift */,
+				BFD2FA6324FEF8370072C2BA /* WDFaqViewController.xib */,
+				BFD2FA6624FEF9160072C2BA /* WDFaqAnswerViewController.swift */,
+				BFD2FA6724FEF9160072C2BA /* WDFaqAnswerViewController.xib */,
+			);
+			path = WeightDistribution;
+			sourceTree = "<group>";
+		};
+		D30603BB230B19A800E245A6 /* instructions */ = {
+			isa = PBXGroup;
+			children = (
+				D3D4681E23295CFA000303A4 /* Step10ViewController.swift */,
+				D3D4681223295B09000303A4 /* Step1ViewController.swift */,
+				D38FDC6E2368D7230026DB10 /* Step0ViewController.swift */,
+				D3D4681423295B1C000303A4 /* Step2ViewController.swift */,
+				D31D16A4230DB4C600452A25 /* Step3ViewController.swift */,
+				D3D4681623295B39000303A4 /* Step4ViewController.swift */,
+				D3D4681823295B4B000303A4 /* Step5ViewController.swift */,
+				D31D16A6230DB53900452A25 /* Step6ViewController.swift */,
+				D3D4681A23295B69000303A4 /* Step7ViewController.swift */,
+				D31D16A8230DC82E00452A25 /* Step8ViewController.swift */,
+				D3D4681C23295B7F000303A4 /* Step9ViewController.swift */,
+			);
+			path = instructions;
+			sourceTree = "<group>";
+		};
+		D340B9672097CA6300CA7C72 = {
+			isa = PBXGroup;
+			children = (
+				D340B9722097CA6300CA7C72 /* WeighSafe */,
+				D340B9712097CA6300CA7C72 /* Products */,
+				A59FB45B20B75F2096C21F24 /* Frameworks */,
+				8B73ECCF603210D3B43A7FFD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D340B9712097CA6300CA7C72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D340B9702097CA6300CA7C72 /* WeighSafe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D340B9722097CA6300CA7C72 /* WeighSafe */ = {
+			isa = PBXGroup;
+			children = (
+				BFEC865A258ADA2900528F92 /* WeighSafe.entitlements */,
+				BF444ABC24EB271F00B3C6E6 /* views */,
+				BF444AB024E765E300B3C6E6 /* coredata */,
+				BF444AA224E60CCE00B3C6E6 /* controllers */,
+				BF444A9B24E602F900B3C6E6 /* storyboards */,
+				D30603BB230B19A800E245A6 /* instructions */,
+				D3723C2F220140340050A4C7 /* Vehicle+CoreDataClass.swift */,
+				D3723C30220140340050A4C7 /* Vehicle+CoreDataProperties.swift */,
+				D3723BF42200CC030050A4C7 /* fonts */,
+				D31F0AC2209CFE540035327D /* CustomModal.swift */,
+				D31F0AC3209CFE540035327D /* CustomModalDelegate.swift */,
+				D31F0AC0209CFE2D0035327D /* CustomModal.xib */,
+				D340B9732097CA6300CA7C72 /* AppDelegate.swift */,
+				D340B9772097CA6300CA7C72 /* Main.storyboard */,
+				D33E50B72306278700201E70 /* InstructionsPageViewController.swift */,
+				D3723BEB2200C2A40050A4C7 /* TowChecklistViewController.swift */,
+				D39B097E2098CE22004896A3 /* TextField.swift */,
+				D337A38F20A5F67100100E0B /* Toast.swift */,
+				D31A1C0C2316FD7400BA9508 /* Weigh-Safe-True-Tow-Weight-Distribution-Hitch-Limited-Lifetime-Warranty.pdf */,
+				BF35E3D825AD2B47005FDE75 /* TOU-V1.pdf */,
+				D39B09802098D816004896A3 /* Color.swift */,
+				D340B97A2097CA6500CA7C72 /* Assets.xcassets */,
+				D340B97C2097CA6500CA7C72 /* LaunchScreen.storyboard */,
+				D340B97F2097CA6500CA7C72 /* Info.plist */,
+				D3723C012201147F0050A4C7 /* PersistenceManager.swift */,
+				D3723C2C22013F070050A4C7 /* WeighSafe.xcdatamodeld */,
+				BFCAB69624F02E0A00A453E1 /* WeighSafeStore.xcdatamodeld */,
+				BF444AD524EC829A00B3C6E6 /* Extensions.swift */,
+				BF444AD724ECA5FF00B3C6E6 /* Validators.swift */,
+				BF444AD924ECF8AA00B3C6E6 /* Protocols.swift */,
+			);
+			path = WeighSafe;
+			sourceTree = "<group>";
+		};
+		D3723BF42200CC030050A4C7 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D3723BF72200CC150050A4C7 /* Roboto-Bold.ttf */,
+				D3723BF52200CC150050A4C7 /* Roboto-Medium.ttf */,
+				D3723BF62200CC150050A4C7 /* Roboto-Thin.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D340B96F2097CA6300CA7C72 /* WeighSafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D340B9822097CA6500CA7C72 /* Build configuration list for PBXNativeTarget "WeighSafe" */;
+			buildPhases = (
+				28C95DA65291B36CCFEFEB73 /* [CP] Check Pods Manifest.lock */,
+				D340B96C2097CA6300CA7C72 /* Sources */,
+				D340B96D2097CA6300CA7C72 /* Frameworks */,
+				D340B96E2097CA6300CA7C72 /* Resources */,
+				EF9CF4771CACC4D7AF335AFB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeighSafe;
+			productName = WeighSafe;
+			productReference = D340B9702097CA6300CA7C72 /* WeighSafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D340B9682097CA6300CA7C72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Lemonadestand Inc";
+				TargetAttributes = {
+					D340B96F2097CA6300CA7C72 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1130;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D340B96B2097CA6300CA7C72 /* Build configuration list for PBXProject "WeighSafe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D340B9672097CA6300CA7C72;
+			productRefGroup = D340B9712097CA6300CA7C72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D340B96F2097CA6300CA7C72 /* WeighSafe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D340B96E2097CA6300CA7C72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD2FA5D24FEE9910072C2BA /* WDWarrantyViewController.xib in Resources */,
+				BF444AD424EC814C00B3C6E6 /* TrailerViewController.xib in Resources */,
+				BF444AB924E7B44500B3C6E6 /* WeighSafe.xcdatamodeld in Resources */,
+				BFD2FA6124FEEB120072C2BA /* WDMaintenanceViewController.xib in Resources */,
+				BFD2FA6924FEF9160072C2BA /* WDFaqAnswerViewController.xib in Resources */,
+				BF444A9F24E6036800B3C6E6 /* Setup.storyboard in Resources */,
+				BFD2FA4824F86ADA0072C2BA /* MeasurementsViewController.xib in Resources */,
+				BF444AC024EB279800B3C6E6 /* VehicleTableViewCell.xib in Resources */,
+				D3723BFA2200CC150050A4C7 /* Roboto-Bold.ttf in Resources */,
+				BF444AC424EB527E00B3C6E6 /* CargoTableViewCell.xib in Resources */,
+				BFF4D1CD255C6C850022D7E2 /* Notes.storyboard in Resources */,
+				BF444AD024EC614800B3C6E6 /* VehicleViewController.xib in Resources */,
+				D3723BF82200CC150050A4C7 /* Roboto-Medium.ttf in Resources */,
+				D31F0AC1209CFE2D0035327D /* CustomModal.xib in Resources */,
+				BF91EA2B260508AC0031D928 /* ConfigsTableView.xib in Resources */,
+				BF444A9D24E6034F00B3C6E6 /* Home.storyboard in Resources */,
+				BF444AA124E6038000B3C6E6 /* Checklist.storyboard in Resources */,
+				D3723BF92200CC150050A4C7 /* Roboto-Thin.ttf in Resources */,
+				BFD2FA5924FEDD6B0072C2BA /* ContactViewController.xib in Resources */,
+				BF444ADE24EEE7E900B3C6E6 /* HitchViewController.xib in Resources */,
+				BF444ACC24EBA03F00B3C6E6 /* HitchTableViewCell.xib in Resources */,
+				BFD2FA5124FE06170072C2BA /* WeightDistributionMenuViewController.xib in Resources */,
+				D31A1C0D2316FD7400BA9508 /* Weigh-Safe-True-Tow-Weight-Distribution-Hitch-Limited-Lifetime-Warranty.pdf in Resources */,
+				BF444AE224EEE87000B3C6E6 /* CargoViewController.xib in Resources */,
+				D340B97E2097CA6500CA7C72 /* LaunchScreen.storyboard in Resources */,
+				BF35E3D925AD2B47005FDE75 /* TOU-V1.pdf in Resources */,
+				BFD2FA6524FEF8370072C2BA /* WDFaqViewController.xib in Resources */,
+				D340B97B2097CA6500CA7C72 /* Assets.xcassets in Resources */,
+				BFCAB6A424F0700700A453E1 /* VinLookupTableViewController.xib in Resources */,
+				BF444AC824EB591100B3C6E6 /* TrailerTableViewCell.xib in Resources */,
+				D340B9792097CA6300CA7C72 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28C95DA65291B36CCFEFEB73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeighSafe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9CF4771CACC4D7AF335AFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeighSafe/Pods-WeighSafe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeighSafe/Pods-WeighSafe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeighSafe/Pods-WeighSafe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D340B96C2097CA6300CA7C72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF444AB624E7675500B3C6E6 /* Hitch+CoreDataClass.swift in Sources */,
+				BF444ACF24EC614800B3C6E6 /* VehicleViewController.swift in Sources */,
+				BFD2FA5824FEDD6B0072C2BA /* ContactViewController.swift in Sources */,
+				BF444AB424E7670E00B3C6E6 /* Cargo+CoreDataClass.swift in Sources */,
+				BF444ADD24EEE7E900B3C6E6 /* HitchViewController.swift in Sources */,
+				D3723BEC2200C2A40050A4C7 /* TowChecklistViewController.swift in Sources */,
+				D3D4681523295B1D000303A4 /* Step2ViewController.swift in Sources */,
+				BFD2FA5C24FEE9910072C2BA /* WDWarrantyViewController.swift in Sources */,
+				D31D16A5230DB4C600452A25 /* Step3ViewController.swift in Sources */,
+				BF444ABF24EB279800B3C6E6 /* VehicleTableViewCell.swift in Sources */,
+				BF444ADA24ECF8AA00B3C6E6 /* Protocols.swift in Sources */,
+				BF444AE424EF21EE00B3C6E6 /* HomeViewController.swift in Sources */,
+				BFD2FA6824FEF9160072C2BA /* WDFaqAnswerViewController.swift in Sources */,
+				D3D4681323295B09000303A4 /* Step1ViewController.swift in Sources */,
+				BFF4D1D0255C6E500022D7E2 /* NotesViewController.swift in Sources */,
+				D31D16A7230DB53900452A25 /* Step6ViewController.swift in Sources */,
+				BF91EA3726051D800031D928 /* ConfigsTableViewDelegate.swift in Sources */,
+				BF444AB224E7665600B3C6E6 /* Trailer+CoreDataClass.swift in Sources */,
+				D3D4681F23295CFA000303A4 /* Step10ViewController.swift in Sources */,
+				D3D4681D23295B7F000303A4 /* Step9ViewController.swift in Sources */,
+				D3D4681723295B39000303A4 /* Step4ViewController.swift in Sources */,
+				BFCAB69824F02E0A00A453E1 /* WeighSafeStore.xcdatamodeld in Sources */,
+				BF444AAD24E60F9B00B3C6E6 /* HitchTabViewController.swift in Sources */,
+				BF444ABB24E7B53300B3C6E6 /* Configuration+CoreDataClass.swift in Sources */,
+				BF444AC724EB591100B3C6E6 /* TrailerTableViewCell.swift in Sources */,
+				BF444AD824ECA5FF00B3C6E6 /* Validators.swift in Sources */,
+				BFD2FA6024FEEB120072C2BA /* WDMaintenanceViewController.swift in Sources */,
+				D39B097F2098CE22004896A3 /* TextField.swift in Sources */,
+				D3723C022201147F0050A4C7 /* PersistenceManager.swift in Sources */,
+				BF444AE124EEE87000B3C6E6 /* CargoViewController.swift in Sources */,
+				BF444AD324EC814C00B3C6E6 /* TrailerViewController.swift in Sources */,
+				D31D16A9230DC82E00452A25 /* Step8ViewController.swift in Sources */,
+				BF444AA924E60F3400B3C6E6 /* VehicleTabViewController.swift in Sources */,
+				D38FDC6F2368D7230026DB10 /* Step0ViewController.swift in Sources */,
+				BFD2FA5024FE06170072C2BA /* WeightDistributionMenuViewController.swift in Sources */,
+				D3D4681923295B4B000303A4 /* Step5ViewController.swift in Sources */,
+				D39B09812098D816004896A3 /* Color.swift in Sources */,
+				D33E50B82306278700201E70 /* InstructionsPageViewController.swift in Sources */,
+				BFD2FA6424FEF8370072C2BA /* WDFaqViewController.swift in Sources */,
+				BF444AAB24E60F8700B3C6E6 /* TrailerTabViewController.swift in Sources */,
+				D3723C32220140340050A4C7 /* Vehicle+CoreDataProperties.swift in Sources */,
+				D3723C31220140340050A4C7 /* Vehicle+CoreDataClass.swift in Sources */,
+				BF5CC65F25CB800300EB321F /* WelcomeViewController.swift in Sources */,
+				BF444AA424E60D0400B3C6E6 /* UISlidingTabController.swift in Sources */,
+				D31F0AC5209CFE540035327D /* CustomModalDelegate.swift in Sources */,
+				BFE8B9C9256F0E2600F2B443 /* DisclaimerViewController.swift in Sources */,
+				BF444AA624E60E7600B3C6E6 /* VehicleSetupViewController.swift in Sources */,
+				BF91EA2A260508AC0031D928 /* ConfigsTableView.swift in Sources */,
+				BF444AC324EB527E00B3C6E6 /* CargoTableViewCell.swift in Sources */,
+				BF444ACB24EBA03F00B3C6E6 /* HitchTableViewCell.swift in Sources */,
+				D340B9742097CA6300CA7C72 /* AppDelegate.swift in Sources */,
+				BF444AAF24E60FAD00B3C6E6 /* CargoTabViewController.swift in Sources */,
+				BFCAB6A324F0700700A453E1 /* VinLookupTableViewController.swift in Sources */,
+				BFD2FA4724F86ADA0072C2BA /* MeasurementsViewController.swift in Sources */,
+				BF444AD624EC829A00B3C6E6 /* Extensions.swift in Sources */,
+				D337A39020A5F67100100E0B /* Toast.swift in Sources */,
+				D3D4681B23295B69000303A4 /* Step7ViewController.swift in Sources */,
+				D31F0AC4209CFE540035327D /* CustomModal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D340B9772097CA6300CA7C72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D340B9782097CA6300CA7C72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D340B97C2097CA6500CA7C72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D340B97D2097CA6500CA7C72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D340B9802097CA6500CA7C72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D340B9812097CA6500CA7C72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D340B9832097CA6500CA7C72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9CBA3836C614CE82DA61AD9 /* Pods-WeighSafe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WeighSafe/WeighSafe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = QSN742Z3LZ;
+				INFOPLIST_FILE = WeighSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.lemonadestand.WeighSafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D340B9842097CA6500CA7C72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78EEDCDF30A86A5A26C62A19 /* Pods-WeighSafe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WeighSafe/WeighSafe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = QSN742Z3LZ;
+				INFOPLIST_FILE = WeighSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.lemonadestand.WeighSafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D340B96B2097CA6300CA7C72 /* Build configuration list for PBXProject "WeighSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D340B9802097CA6500CA7C72 /* Debug */,
+				D340B9812097CA6500CA7C72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D340B9822097CA6500CA7C72 /* Build configuration list for PBXNativeTarget "WeighSafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D340B9832097CA6500CA7C72 /* Debug */,
+				D340B9842097CA6500CA7C72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFCAB69624F02E0A00A453E1 /* WeighSafeStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFCAB69724F02E0A00A453E1 /* WeighSafeStore.xcdatamodel */,
+			);
+			currentVersion = BFCAB69724F02E0A00A453E1 /* WeighSafeStore.xcdatamodel */;
+			path = WeighSafeStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		D3723C2C22013F070050A4C7 /* WeighSafe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3723C2D22013F070050A4C7 /* WeighSafe.xcdatamodel */,
+			);
+			currentVersion = D3723C2D22013F070050A4C7 /* WeighSafe.xcdatamodel */;
+			path = WeighSafe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D340B9682097CA6300CA7C72 /* Project object */;
+}

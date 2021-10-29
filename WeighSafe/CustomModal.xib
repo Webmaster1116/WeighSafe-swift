@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomModal" customModule="WeighSafe" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonsView" destination="wG9-Hy-At9" id="A94-F0-Aqv"/>
+                <outlet property="container" destination="kwv-A2-djQ" id="fmk-05-7RV"/>
+                <outlet property="containerBody" destination="pt1-2i-Nf8" id="QWt-q7-NBo"/>
+                <outlet property="containerBottom" destination="g4l-oj-DJ0" id="Kej-KH-oKl"/>
+                <outlet property="containerHeight" destination="VC2-Pj-che" id="jyl-98-3Aj"/>
+                <outlet property="containerTop" destination="9DT-L1-fan" id="VPk-cE-pAw"/>
+                <outlet property="containerWidth" destination="old-M2-Kms" id="pF1-42-2PY"/>
+                <outlet property="titleLabel" destination="qns-KG-vLW" id="Yfj-RY-tS8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwv-A2-djQ">
+                    <rect key="frame" x="16" y="197" width="343" height="273"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9DT-L1-fan">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qns-KG-vLW">
+                                    <rect key="frame" x="8" y="13" width="327" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="BMs-Wb-Vd7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="qns-KG-vLW" firstAttribute="leading" secondItem="9DT-L1-fan" secondAttribute="leading" constant="8" id="9VF-4O-KPv"/>
+                                <constraint firstAttribute="height" constant="48" id="Ysq-WQ-ual"/>
+                                <constraint firstAttribute="trailing" secondItem="qns-KG-vLW" secondAttribute="trailing" constant="8" id="f0V-Ry-UZp"/>
+                                <constraint firstItem="qns-KG-vLW" firstAttribute="top" secondItem="9DT-L1-fan" secondAttribute="top" constant="13" id="ghP-xA-tdc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4l-oj-DJ0">
+                            <rect key="frame" x="0.0" y="225" width="343" height="48"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wG9-Hy-At9">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="wG9-Hy-At9" secondAttribute="trailing" id="5kV-hV-UAa"/>
+                                <constraint firstItem="wG9-Hy-At9" firstAttribute="top" secondItem="g4l-oj-DJ0" secondAttribute="top" id="L9t-Es-hFg"/>
+                                <constraint firstAttribute="bottom" secondItem="wG9-Hy-At9" secondAttribute="bottom" id="NKd-A6-T6J"/>
+                                <constraint firstItem="wG9-Hy-At9" firstAttribute="leading" secondItem="g4l-oj-DJ0" secondAttribute="leading" id="x4q-QP-vvS"/>
+                                <constraint firstAttribute="height" constant="48" id="xqF-Gn-kEZ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pt1-2i-Nf8">
+                            <rect key="frame" x="0.0" y="50" width="343" height="173"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="g4l-oj-DJ0" secondAttribute="trailing" id="0fQ-Ez-cAI"/>
+                        <constraint firstItem="9DT-L1-fan" firstAttribute="leading" secondItem="kwv-A2-djQ" secondAttribute="leading" id="3Lq-U7-gG0"/>
+                        <constraint firstItem="9DT-L1-fan" firstAttribute="top" secondItem="kwv-A2-djQ" secondAttribute="top" id="E4l-mH-WxL"/>
+                        <constraint firstAttribute="bottom" secondItem="g4l-oj-DJ0" secondAttribute="bottom" id="MT8-jV-V2w"/>
+                        <constraint firstItem="g4l-oj-DJ0" firstAttribute="leading" secondItem="kwv-A2-djQ" secondAttribute="leading" id="SYo-SH-dk2"/>
+                        <constraint firstAttribute="height" constant="273" id="VC2-Pj-che"/>
+                        <constraint firstAttribute="trailing" secondItem="pt1-2i-Nf8" secondAttribute="trailing" id="X74-yD-Q3J"/>
+                        <constraint firstItem="pt1-2i-Nf8" firstAttribute="top" secondItem="9DT-L1-fan" secondAttribute="bottom" constant="2" id="btn-vq-3Lc"/>
+                        <constraint firstItem="g4l-oj-DJ0" firstAttribute="top" secondItem="pt1-2i-Nf8" secondAttribute="bottom" constant="2" id="lau-y2-WgQ"/>
+                        <constraint firstItem="pt1-2i-Nf8" firstAttribute="leading" secondItem="kwv-A2-djQ" secondAttribute="leading" id="m8p-7f-Wa6"/>
+                        <constraint firstAttribute="width" constant="343" id="old-M2-Kms"/>
+                        <constraint firstAttribute="trailing" secondItem="9DT-L1-fan" secondAttribute="trailing" id="r7S-sS-Aze"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kwv-A2-djQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="W6m-Me-LU8"/>
+                <constraint firstItem="kwv-A2-djQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nYU-Lr-SUQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
